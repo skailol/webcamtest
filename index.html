@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webcam View</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Webcam View</h1>
+    <div id="video-container">
+      <video id="video" autoplay></video>
+      <div id="cooldown-overlay" class="cooldown-overlay"></div>
+    </div>
+    <div id="info-container">
+      <h2>Webcam Information</h2>
+      <table>
+        <tr>
+          <td><strong>Webcam Name:</strong></td>
+          <td id="webcam-name-info"></td>
+        </tr>
+        <tr>
+          <td><strong>Webcam Resolution:</strong></td>
+          <td id="webcam-resolution-info"></td>
+        </tr>
+        <tr>
+          <td><strong>Webcam Megapixels:</strong></td>
+          <td id="webcam-megapixels-info"></td>
+        </tr>
+        <tr>
+          <td><strong>Webcam FPS:</strong></td>
+          <td id="webcam-fps-info"></td>
+        </tr>
+        <tr>
+          <td><strong>Built-in Microphone:</strong></td>
+          <td id="microphone-info"></td>
+        </tr>
+        <tr>
+          <td><strong>Built-in Speaker:</strong></td>
+          <td id="speaker-info"></td>
+        </tr>
+      </table>
+    </div>
+    <button id="allow-webcam-button">Test Webcam</button>
+    <button id="stop-webcam-button" style="display: none;">Stop Webcam</button>
+    <script src="script.js"></script>
+  </body>
+</html>
